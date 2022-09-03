@@ -3,7 +3,7 @@ const mongoose=require("mongoose")
 const cors=require("cors")
 const app=express();
 
-const mongoURI=process.env.MONGO_ID || "mongodb://localhost:27017/testing?readPreference=primary&appname=MongoDB%20Compass&ssl=false"
+const mongoURI=process.env.MONGO_ID || "mongodb+srv://anushacodes:anushacodes@cluster0.mbfgnwb.mongodb.net/?retryWrites=true&w=majority"
 const connectToMongo=async()=>{
  await mongoose.connect(mongoURI,()=>{console.log("connected to mongo")})
 }
